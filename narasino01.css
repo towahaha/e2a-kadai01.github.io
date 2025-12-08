@@ -1,36 +1,43 @@
 @charset "UTF-8";
 
-/* ページ全体の背景：薄い黄色 */
+/* ページ全体の背景：クリームイエロー */
 body {
-    background-color: #1a0510; /* 非常に暗い紫がかった黒 */
+    background-color: #fffdf0; /* 柔らかく薄い黄色（クリーム色） */
     font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; /* 繊細な明朝体 */
+    margin: 20px;              /* 画面端に余白を作る */
 }
 
-/* h1（メインの見出し）：情熱的な赤と光彩 */
+/* h1（メインの見出し）：白地に深紅の枠 */
 h1 {
-    color: #e60033;          /* 文字色：鮮やかな深紅 */
-    font-size: 36px;         /* 少し大きめに強調 */
-    font-weight: normal;     /* あえて太くしすぎず、繊細さを残す */
-    letter-spacing: 0.1em;   /* 文字間隔を広げてゆったりと */
-    text-shadow: 0 0 10px rgba(230, 0, 51, 0.6); /* 淡く赤く光らせる */
-    border-bottom: 1px solid #551a2a; /* 下にうっすらと線を引く */
-    padding-bottom: 10px;
+    color: #c9171e;            /* 文字色：少し暗めの深紅（白背景で読みやすく） */
+    background-color: #ffffff; /* 背景：白で囲む */
+    border: 1px solid #c9171e; /* 枠線：細い赤のライン */
+    border-left: 10px solid #c9171e; /* 左端だけ太くしてアクセント */
+    font-size: 32px;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    padding: 15px 20px;        /* 文字と枠の間の余白 */
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.1); /* ふんわりとした影 */
 }
 
-/* h2（小見出し）：妖艶な紫 */
+/* h2（小見出し）：薄紫の背景で囲む */
 h2 {
-    color: #d8bfd8;          /* 文字色：淡い紫（シスル） */
-    font-size: 26px;
-    font-style: italic;      /* 斜体にして動きをつける */
-    border-left: 3px solid #800080; /* 左側に紫のアクセント */
-    padding-left: 15px;      /* アクセントとの距離 */
-    margin-top: 40px;        /* 上の要素との間隔を空ける */
+    color: #4b0082;            /* 文字色：濃い紫（インディゴ） */
+    background-color: #f3e6f5; /* 背景：ごく薄い紫 */
+    font-size: 24px;
+    font-style: italic;        /* 斜体 */
+    padding: 10px 15px;        /* 囲みの中の余白 */
+    border-bottom: 2px solid #800080; /* 下線で引き締める */
+    margin-top: 40px;
 }
 
-/* p（段落）：闇に浮かぶ白煙のようなグレー */
+/* p（段落）：白いカードのような囲み */
 p {
-    color: #ccc0c5;          /* 文字色：ほんのり赤みのあるグレー */
+    color: #333333;            /* 文字色：濃いグレー（読みやすさ重視） */
+    background-color: rgba(255, 255, 255, 0.8); /* 背景：半透明の白 */
     font-size: 16px;
-    line-height: 2.0;        /* 行間をかなり広く取り、余韻を持たせる */
-    text-align: justify;     /* 両端揃えで整える */
+    line-height: 2.0;
+    padding: 20px;             /* 文章の周りの余白 */
+    border-radius: 5px;        /* 角を少し丸くする */
+    border: 1px solid #ddd;    /* 薄いグレーの枠線 */
 }
