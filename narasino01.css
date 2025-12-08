@@ -1,21 +1,36 @@
 @charset "UTF-8";
 
+/* ページ全体の背景：漆黒に近い紫 */
+body {
+    background-color: #1a0510; /* 非常に暗い紫がかった黒 */
+    font-family: "Yu Mincho", "Hiragino Mincho ProN", serif; /* 繊細な明朝体 */
+}
+
+/* h1（メインの見出し）：情熱的な赤と光彩 */
 h1 {
-    /* <h1>（メインの見出し）のスタイル */
-    color: navy;         /* 文字色：ネイビー（紺色） */
-    font-size: 32px;     /* 文字サイズ：32ピクセル */
-    font-weight: bold;   /* 文字の太さ：太字 */
+    color: #e60033;          /* 文字色：鮮やかな深紅 */
+    font-size: 36px;         /* 少し大きめに強調 */
+    font-weight: normal;     /* あえて太くしすぎず、繊細さを残す */
+    letter-spacing: 0.1em;   /* 文字間隔を広げてゆったりと */
+    text-shadow: 0 0 10px rgba(230, 0, 51, 0.6); /* 淡く赤く光らせる */
+    border-bottom: 1px solid #551a2a; /* 下にうっすらと線を引く */
+    padding-bottom: 10px;
 }
 
+/* h2（小見出し）：妖艶な紫 */
 h2 {
-    /* <h2>（小見出し）のスタイル */
-    color: #444;         /* 文字色：濃い灰色 */
-    font-size: 24px;     /* 文字サイズ：24ピクセル */
+    color: #d8bfd8;          /* 文字色：淡い紫（シスル） */
+    font-size: 26px;
+    font-style: italic;      /* 斜体にして動きをつける */
+    border-left: 3px solid #800080; /* 左側に紫のアクセント */
+    padding-left: 15px;      /* アクセントとの距離 */
+    margin-top: 40px;        /* 上の要素との間隔を空ける */
 }
 
+/* p（段落）：闇に浮かぶ白煙のようなグレー */
 p {
-    /* <p>（段落）のスタイル */
-    color: #333;         /* 文字色：濃い灰色（※元の指示はピンクでしたがコードは灰色です） */
-    font-size: 16px;     /* 文字サイズ：16ピクセル */
-    line-height: 1.7;    /* 行の高さ：1.7倍（読みやすくする） */
+    color: #ccc0c5;          /* 文字色：ほんのり赤みのあるグレー */
+    font-size: 16px;
+    line-height: 2.0;        /* 行間をかなり広く取り、余韻を持たせる */
+    text-align: justify;     /* 両端揃えで整える */
 }
